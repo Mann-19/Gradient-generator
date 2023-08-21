@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gradient Generator</title>
+</head>
+<body>
+    <nav>
+        <h1>Gradient Generator</h1>
+    </nav>
+    <div class="card">
+        <div id="color-preview"></div>
+        <div class="direction">
+            <label for="direction">Direction</label>
+            <select name="direction" id="direction">
+                <option value="" selected disabled>Select Direction</option>
+                <option value="to top">To Top</option>
+                <option value="to bottom">To Bottom</option>
+                <option value="to right">To Right</option>
+                <option value="to left"> To Left</option>
+                <option value="to right top">To Right top</option>
+                <option value="to left top"> To Left top</option>
+                <option value="to right bottom"> To Right bottom</option>
+                <option value="to left bottom">To Left bottom</option>
+            </select>
+        </div>
+        <div class="colors">
+            <label for="colors">Colors</label>
+            <div class="colors-container">
+                <!-- <input type="color" name="colors" id="colors"> -->
+                <button id="add-color" onclick="createColorInput()">+</button>
+            </div>
+        </div>
+        <button id="generate-palette">Generate</button>
+        <button id="refresh-palette">Refresh palette</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
